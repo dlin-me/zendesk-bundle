@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+  <parameters>
+    <parameter key="dlin.zendesk.class">Dlin\Bundle\ZendeskBundle\Service\ZendeskService</parameter>
+    <parameter key="dlin.zendesk.email"></parameter>
+    <parameter key="dlin.zendesk.token"></parameter>
+    <parameter key="dlin.zendesk.url"></parameter>
+
+  </parameters>
+
+  <services>
+    <service id="dlin.zendesk" class="%dlin.zendesk.class%">
+      <argument on-invalid="ignore">%dlin.zendesk.email%</argument>
+      <argument on-invalid="ignore">%dlin.zendesk.token%</argument>
+      <argument on-invalid="ignore">%dlin.zendesk.url%</argument>
+    </service>
+
+
+  </services>
+</container>

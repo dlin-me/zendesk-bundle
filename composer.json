@@ -1,0 +1,36 @@
+{
+    "name": "dlin/zendesk-bundle",
+    "description": "A Syfmony 2 Bundle for Dlin Zendesk client library",
+    "keywords": ["zendesk", "symfony"],
+
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "David Lin",
+            "email": "davidforest@gmail.com"
+        }
+    ],
+    "homepage": "http://dlin.me",
+
+    "version": "0.0.1",
+
+    "minimum-stability": "dev",
+    "target-dir": "Dlin/Bundle/ZendeskBundle",
+
+    "autoload": {
+        "psr-0": { "Dlin\\Bundle\\ZendeskBundle": "" }
+    },
+
+    "require": {
+        "php": ">=5.3.8",
+        "dlin/zendesk": ">=0.0.1"
+    },
+
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.0",
+        "symfony/finder": "2.3.*"
+    }
+
+
+}
