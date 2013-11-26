@@ -1,17 +1,17 @@
-Dlin Symfony Keen Bundle
+Dlin Symfony Zendesk Bundle
 =========
 
-Dlin Keen Bundle is Symfony2 wrapper bundle for the 'Keen.IO' PHP library:
+Dlin Zendesk Bundle is Symfony2 wrapper bundle for the 'Dlin\Zendesk' PHP library:
 
 
-This Keen Bundle provides a configurable service to work with Keen.IO
+This Zendesk Bundle provides a configurable service to work with Zendesk API
 
 
 
 Version
 --------------
 
-0.9
+0.0.1
 
 
 
@@ -27,7 +27,7 @@ Add to your `composer.json`:
     json
     {
         "require" :  {
-            "dlin/keen-bundle": "dev-master"
+            "dlin/zendesk-bundle": "dev-master"
         }
     }
 
@@ -50,10 +50,10 @@ For example:
 
     #app/config/config.yml
 
-    dlin_keen:
-        project_id: werknskviehraf234slf
-        read_key: xxxxxxxxxxx
-        write_key: xxxxxxxxx
+    dlin_zendesk:
+        email: werknskviehraf234slf
+        token: xxxxxxxxxxx
+        url: xxxxxxxxx
 
 
 Usage
@@ -67,7 +67,7 @@ Getting the service in a ContainerAwareService
 
     $service = $this->container->get('dlin.keen_service');
 
-Sending an event to Keen.IO with data
+Sending an event to Zendesk.IO with data
 
     $eventCollectionName = "purchases";
 

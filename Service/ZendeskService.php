@@ -5,11 +5,10 @@ namespace Dlin\Bundle\ZendeskBundle\Service;
 
 
 
+use Dlin\Zendesk\ZendeskApi;
 
 class ZendeskService
 {
-
-
 
     /**
      * @var  \Dlin\Zendesk\ZendeskApi
@@ -32,13 +31,12 @@ class ZendeskService
     /**
      *
      * This return the initialized client.
-     * Useful for making query, for example
      *
-     * @return \Dlin\Zendesk\ZendeskAPI
+     * @return \Dlin\Zendesk\ZendeskApi
      *
      */
-    public function getClient(){
-        return $this->client;
+    public function getApi(){
+        return $this->api;
     }
 
 
