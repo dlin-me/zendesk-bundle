@@ -61,11 +61,11 @@ Usage
 
 Geting the service in a controller
 
-    $api =  $this->get('dlin.zendesk');
+    $api =  $this->get('dlin.zendesk')->getApi();
 
 Getting the service in a ContainerAwareService
 
-    $api = $this->container->get('dlin.zendesk');
+    $api = $this->container->get('dlin.zendesk')->getApi();
 
 
 Using the service
